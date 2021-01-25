@@ -3,12 +3,12 @@
   become: true
   tasks:
           - name: Add epel-release repo / Ensure it's up to date
-            yum:
+            dnf:
               name: epel-release
               state: present
 
           - name: Install nginx package / Ensure it's up to date
-            yum: 
+            dnf: 
               name: nginx
               state: present
 
